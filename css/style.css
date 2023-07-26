@@ -2,7 +2,6 @@ body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     background-color: cornflowerblue;
-    background-image:url(./imgs/img-bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
