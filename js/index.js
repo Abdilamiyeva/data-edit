@@ -14,7 +14,7 @@ const data = [
 ];
 const dataContainer = document.getElementById("data-container");
 const editForm = document.getElementById("edit-form");
-// Ma'lumotlarni chiqarish
+//Output the data
 function renderData() {
     dataContainer.innerHTML = "";
     data.forEach((item, index) => {
@@ -24,7 +24,7 @@ function renderData() {
     dataContainer.appendChild(dataItem);
     });
 }
-// Tahrirlash formasi ko'rsatish
+// Show edit form
 function showEditForm(index) {
     const selectedData = data[index];
     editForm.innerHTML = `
@@ -34,14 +34,15 @@ function showEditForm(index) {
     `;
     editForm.style.display = "block";
 }
-// O'zgartirishlarni saqlash
+// 
+Save changes
 function saveChanges(index) {
     const editedValue = document.getElementById("edit-value").value;
     data[index].value = editedValue;
     editForm.style.display = "none";
     renderData();
 }
-// Asosiy funksiya
+// Main function
 function init() {
     renderData();
 }
