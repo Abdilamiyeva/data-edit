@@ -34,8 +34,7 @@ function showEditForm(index) {
     `;
     editForm.style.display = "block";
 }
-// 
-Save changes
+// Save changes
 function saveChanges(index) {
     const editedValue = document.getElementById("edit-value").value;
     data[index].value = editedValue;
